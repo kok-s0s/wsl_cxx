@@ -6,7 +6,7 @@ just Record!
 
 ## Development Environment
 
-1. With `Windows for Linux` --- Ubuntu
+1. With `Windows Substystem for Linux` --- Ubuntu
 
 - gcc/g++ --- Ubuntu Version
 
