@@ -1,0 +1,7 @@
+Focal length of objective: 3 mm
+f.1 eyepiece  mangification
+         3.0              1
+         4.0              1
+         5.0              1
+         6.0              1
+         7.0              0
