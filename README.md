@@ -1,3 +1,4 @@
+```bash
 .
 ├── microsoft_docs_code
 │   ├── base
@@ -13,3 +14,4 @@
     └── how_a_program_works
 
 12 directories
+```
