@@ -7,10 +7,10 @@ C++ 难学易用
 3. 语义背后的深层思维
 4. 深层思维背后的对象模型
 5. 四种不同而又相辅相成的编程范型（programming paradigms）：
-  - procedural-based
-  - object-based
-  - object-oriented
-  - generics
+   - procedural-based
+   - object-based
+   - object-oriented
+   - generics
 
 ---
 
@@ -54,4 +54,3 @@ C++ 难学易用
 ---
 
 程序员 --- 在某个时间点几乎必然会发现，你自己就是自己的客户（也就是使用你自己写的代码），那个时候你就会很高兴你在开发接口时把客户放在心上了。
-
