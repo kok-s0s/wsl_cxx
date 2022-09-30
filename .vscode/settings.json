@@ -6,14 +6,11 @@
   "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
   "workbench.tips.enabled": true,
-
   // Editor panel settings
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
-
   // Right explorer panel settings
   "explorer.openEditors.visible": 0,
-
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
@@ -28,7 +25,6 @@
     "CMakeLists.txt": "*.cmake, *.cmake.in, .cmake-format.yaml, CMakePresets.json",
     "readme*": "authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*"
   },
-
   "explorer.compactFolders": false,
   "explorer.sortOrder": "type",
   "explorer.sortOrderLexicographicOptions": "lower"
