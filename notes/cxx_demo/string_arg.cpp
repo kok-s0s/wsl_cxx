@@ -1,26 +1,40 @@
 #include <iostream>
 #include <string>
 
-std::string mergePathArgs(std::string arg) { return arg.append("/"); }
+using std::string;
+
+string mergePathArgs(string arg) { return arg.append("/"); }
+
+string mergePathArgs(const char* arg) {
+  string temp = arg;
+  return temp.append("/");
+}
 
 template <typename... T>
-std::string mergePathArgs(std::string& arg, T&... args) {
-  std::string path;
+string mergePathArgs(string& arg, T&... args) {
+  string path;
   path = mergePathArgs(arg);
   path += mergePathArgs(args...);
-  path.pop_back();
+  if (path[path.size() - 1] == '/') path.pop_back();
+  return path;
+}
+
+template <typename... T>
+string mergePathArgs(const char* arg, T&... args) {
+  string path;
+  path = mergePathArgs(arg);
+  path += mergePathArgs(args...);
+  if (path[path.size() - 1] == '/') path.pop_back();
   return path;
 }
 
 int main() {
   // Lets make a test
 
-  std::string s1 = "qwe";
-  std::string s2 = "asd";
+  string s1 = "qwe";
+  string s2 = "A.json";
 
-  std::string path = mergePathArgs(s1, s2);
-
-  std::cout << s1 << std::endl << s2 << std::endl;
+  string path = mergePathArgs(s1, s1, s1, s1, s2);
 
   std::cout << path << std::endl;
 
